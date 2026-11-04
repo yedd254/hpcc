@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hope Provision Centre Church — Giving a Living Hope</title>
+<meta name="description" content="Hope Provision Centre Church — Giving a Living Hope. Join us for Sunday worship, midweek fellowship and prayer. Past Kayole Junction near Maana Area, Spring Valley.">
+<meta name="theme-color" content="#16332c">
+<meta property="og:title" content="Hope Provision Centre Church">
+<meta property="og:description" content="Giving a Living Hope — Sunday worship, fellowship and community.">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root{
+    --teal-950:#0f2620;
+    --teal-900:#16332c;
+    --teal-800:#1f473d;
+    --teal-700:#2c5f51;
+    --gold-500:#c99943;
+    --gold-400:#dcb066;
+    --gold-100:#f6e9d1;
+    --clay-600:#a15c3e;
+    --paper:#fbfaf6;
+    --paper-dim:#f1efe6;
+    --ink:#211e18;
+    --ink-soft:#4a4638;
+    --line:#e4dfd0;
+    --shadow: 0 18px 40px -20px rgba(15,38,32,0.35);
+    --shadow-lg: 0 30px 60px -28px rgba(15,38,32,0.45);
+    --radius-lg: 22px;
+    --radius-sm: 12px;
+    --maxw: 1120px;
+    --header-h: 76px;
+    --ease: cubic-bezier(.22,.7,.2,1);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Karla', sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    color:var(--teal-900);
+    margin:0 0 0.5em 0;
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+  p{margin:0 0 1em 0;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  ul,ol{margin:0; padding:0;}
+  li{list-style:none;}
+  button{font-family:inherit;}
+  ::selection{background:var(--gold-400); color:var(--teal-950);}
+  :focus-visible{outline:3px solid var(--gold-500); outline-offset:3px; border-radius:6px;}
+
+  .skip-link{
+    position:absolute; left:16px; top:-60px;
+    background:var(--gold-500); color:var(--teal-950);
+    padding:10px 16px; border-radius:8px; font-weight:700;
+    z-index:300; text-decoration:none;
+    transition:top .2s ease;
+  }
+  .skip-link:focus{ top:12px; }
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  html.js .reveal{
+    opacity:0;
+    transform:translateY(22px);
+    transition:opacity .75s var(--ease), transform .75s var(--ease);
+    transition-delay:var(--d, 0s);
+  }
+  html.js .reveal.in{ opacity:1; transform:none; }
+
+  /* ---------- Header / Nav ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(22,51,44,0.97);
+    -webkit-backdrop-filter:blur(8px);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    transition:box-shadow .3s ease;
+  }
+  header.scrolled{ box-shadow:0 14px 30px -18px rgba(0,0,0,0.55); }
+  .nav-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    height:var(--header-h);
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--paper);
+    text-decoration:none;
+    min-width:0;
+  }
+  .brand-mark{
+    height:56px; width:auto;
+    flex-shrink:0;
+    background:#fff;
+    border-radius:10px;
+    padding:3px;
+    object-fit:contain;
+    transition:transform .3s var(--ease);
+  }
+  .brand:hover .brand-mark{ transform:rotate(-3deg) scale(1.04); }
+  .brand-text{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.12rem;
+    color:var(--paper);
+    letter-spacing:-0.01em;
+    line-height:1.1;
+  }
+  .brand-text span{
+    display:block;
+    font-family:'Karla', sans-serif;
+    font-weight:600;
+    font-size:0.62rem;
+    letter-spacing:0.16em;
+    color:var(--gold-400);
+    margin-top:4px;
+  }
+
+  nav.main-nav{
+    display:flex;
+    align-items:center;
+    gap:2px;
+  }
+  nav.main-nav a{
+    position:relative;
+    display:inline-block;
+    padding:10px 15px;
+    color:var(--paper);
+    text-decoration:none;
+    font-size:0.95rem;
+    font-weight:500;
+    opacity:0.82;
+    transition:opacity 0.2s ease;
+  }
+  nav.main-nav a::after{
+    content:"";
+    position:absolute;
+    left:15px; right:15px; bottom:5px;
+    height:2px;
+    background:var(--gold-500);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform 0.3s var(--ease);
+  }
+  nav.main-nav a:hover,
+  nav.main-nav a:focus-visible{ opacity:1; }
+  nav.main-nav a:hover::after,
+  nav.main-nav a:focus-visible::after,
+  nav.main-nav a.active::after{ transform:scaleX(1); }
+  nav.main-nav a.active{ opacity:1; }
+
+  .menu-toggle{
+    display:none;
+    background:none;
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:10px;
+    width:46px; height:42px;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  .menu-toggle span,
+  .menu-toggle span::before,
+  .menu-toggle span::after{
+    content:"";
+    display:block;
+    width:20px; height:2px;
+    background:var(--paper);
+    position:relative;
+    transition:transform 0.2s ease, opacity 0.2s ease;
+  }
+  .menu-toggle span::before{ position:absolute; top:-6px; }
+  .menu-toggle span::after{ position:absolute; top:6px; }
+  .menu-toggle.open span{ background:transparent; }
+  .menu-toggle.open span::before{ transform:translateY(6px) rotate(45deg); }
+  .menu-toggle.open span::after{ transform:translateY(-6px) rotate(-45deg); }
+
+  /* ---------- Pages ---------- */
+  main{ display:block; }
+  .page{ display:none; }
+  .page.active{ display:block; animation:fadein 0.45s var(--ease); }
+  @keyframes fadein{
+    from{ opacity:0; transform:translateY(8px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:13px 26px;
+    border-radius:100px;
+    font-weight:700;
+    font-size:0.96rem;
+    text-decoration:none;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    transition:transform 0.2s var(--ease), background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn-gold{ background:var(--gold-500); color:var(--teal-950); box-shadow:0 10px 24px -12px rgba(201,153,67,0.9); }
+  .btn-gold:hover{ background:var(--gold-400); }
+  .btn-outline{ background:transparent; color:var(--paper); border-color:rgba(251,250,246,0.4); }
+  .btn-outline:hover{ border-color:var(--paper); background:rgba(255,255,255,0.06); }
+  .btn-teal{ background:var(--teal-900); color:var(--paper); }
+  .btn-teal:hover{ background:var(--teal-800); }
+
+  /* ---------- Hero (Home) ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse at 82% 20%, rgba(201,153,67,0.20), transparent 55%),
+      radial-gradient(ellipse at 8% 100%, rgba(44,95,81,0.45), transparent 55%),
+      linear-gradient(180deg, var(--teal-900), var(--teal-950));
+    color:var(--paper);
+    padding:84px 0 96px;
+    overflow:hidden;
+    position:relative;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:radial-gradient(rgba(220,176,102,0.16) 1px, transparent 1.4px);
+    background-size:26px 26px;
+    -webkit-mask-image:linear-gradient(120deg, transparent 35%, #000 100%);
+            mask-image:linear-gradient(120deg, transparent 35%, #000 100%);
+    pointer-events:none;
+  }
+  .hero .wrap{
+    position:relative;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+  }
+  .eyebrow-gold{
+    display:inline-block;
+    color:var(--gold-400);
+    font-weight:700;
+    font-size:0.82rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    padding:6px 14px;
+    border:1px solid rgba(220,176,102,0.4);
+    border-radius:100px;
+  }
+  .hero h1{
+    color:var(--paper);
+    font-size:clamp(2.3rem, 4.6vw, 3.7rem);
+    max-width:15ch;
+    margin-bottom:0;
+  }
+  .hero h1 em{ font-style:italic; color:var(--gold-400); font-weight:500; }
+  .hero p.lede{
+    color:rgba(251,250,246,0.84);
+    font-size:1.14rem;
+    max-width:48ch;
+    margin-top:20px;
+  }
+  .hero-actions{
+    display:flex;
+    gap:14px;
+    margin-top:32px;
+    flex-wrap:wrap;
+  }
+
+  .hero-logo-frame{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero-logo-frame::before{
+    content:"";
+    position:absolute;
+    width:86%; aspect-ratio:1;
+    border-radius:50%;
+    border:1.5px solid rgba(220,176,102,0.45);
+    transform:translate(10%, 6%);
+  }
+  .hero-logo-frame img{
+    position:relative;
+    width:100%; max-width:340px; height:auto;
+    background:#fff;
+    border-radius:var(--radius-lg);
+    padding:16px;
+    box-shadow:0 30px 60px -22px rgba(0,0,0,0.6);
+    animation:floaty 7s ease-in-out infinite;
+  }
+  @keyframes floaty{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-9px); }
+  }
+
+  .service-strip{
+    background:var(--gold-100);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .service-strip .wrap{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 38px;
+    padding:18px 28px;
+    justify-content:center;
+    color:var(--teal-900);
+    font-weight:700;
+    font-size:0.95rem;
+  }
+  .service-strip .dot{ color:var(--clay-600); margin-right:8px; }
+
+  /* ---------- Sections ---------- */
+  section.block{ padding:84px 0; }
+  .block-heading{
+    max-width:660px;
+    margin:0 0 44px 0;
+  }
+  .block-heading.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:var(--clay-600);
+    font-weight:700;
+    font-size:0.8rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  .kicker::before{
+    content:"";
+    width:26px; height:2px;
+    background:var(--gold-500);
+  }
+  .block-heading h2{ font-size:clamp(1.8rem, 3.2vw, 2.4rem); }
+  .block-heading p{ color:var(--ink-soft); font-size:1.06rem; margin-top:10px; }
+
+  .alt-bg{ background:var(--paper-dim); }
+
+  /* Vision / Mission / Aim cards */
+  .mvv-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:22px;
+  }
+  .mvv-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-lg);
+    padding:32px 30px;
+    position:relative;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), border-color .3s ease;
+  }
+  .mvv-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+    border-color:var(--gold-400);
+  }
+  .mvv-card.wide{ grid-column:1 / -1; }
+  .mvv-card .glyph{ width:46px; height:46px; margin-bottom:18px; }
+  .mvv-card h3{ font-size:1.3rem; margin-bottom:10px; }
+  .mvv-card p{ color:var(--ink-soft); font-size:1.02rem; margin:0; }
+  .mvv-card p strong{ color:var(--teal-900); white-space:nowrap; }
+
+  .values-row{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:16px;
+  }
+  .value-chip{
+    border:1px solid var(--line);
+    background:var(--paper);
+    border-radius:var(--radius-sm);
+    padding:20px 20px;
+    border-top:3px solid var(--gold-500);
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .value-chip:hover{ transform:translateY(-4px); box-shadow:var(--shadow); }
+  .value-chip h4{
+    font-family:'Karla', sans-serif;
+    font-weight:700;
+    font-size:1.02rem;
+    color:var(--teal-900);
+    margin-bottom:6px;
+  }
+  .value-chip p{ font-size:0.92rem; color:var(--ink-soft); margin:0; }
+
+  /* Statement of faith */
+  .faith-list{
+    list-style:none;
+    counter-reset:faith;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:16px 22px;
+  }
+  .faith-list li{
+    counter-increment:faith;
+    position:relative;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-sm);
+    padding:20px 22px 20px 70px;
+    color:var(--ink-soft);
+    font-size:0.99rem;
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .faith-list li:hover{ transform:translateY(-3px); box-shadow:var(--shadow); }
+  .faith-list li::before{
+    content:counter(faith);
+    position:absolute;
+    left:20px; top:18px;
+    width:34px; height:34px;
+    border-radius:50%;
+    background:var(--teal-900);
+    color:var(--gold-400);
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    display:flex; align-items:center; justify-content:center;
+  }
+
+  /* Programs / schedule */
+  .schedule-list{ border-top:1px solid var(--line); }
+  .schedule-row{
+    display:flex;
+    align-items:baseline;
+    gap:28px;
+    padding:22px 14px;
+    margin:0 -14px;
+    border-bottom:1px solid var(--line);
+    border-radius:10px;
+    transition:background .25s ease;
+  }
+  .schedule-row:hover{ background:var(--paper-dim); }
+  .schedule-time{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    color:var(--clay-600);
+    font-size:1.12rem;
+    width:200px;
+    flex-shrink:0;
+  }
+  .schedule-name{ font-weight:700; color:var(--teal-900); margin-bottom:2px; font-size:1.04rem; }
+  .schedule-desc{ color:var(--ink-soft); font-size:0.97rem; }
+
+  /* Moments preview (home) */
+  .moments-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
+  }
+  .moment{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border-radius:var(--radius-sm);
+    aspect-ratio:4/3;
+    background:var(--teal-800);
+    box-shadow:var(--shadow);
+  }
+  .moment img{
+    width:100%; height:100%;
+    object-fit:cover;
+    transition:transform .7s var(--ease);
+  }
+  .moment:hover img{ transform:scale(1.07); }
+  .moment span{
+    position:absolute; left:0; right:0; bottom:0;
+    padding:34px 18px 14px;
+    color:#fff; font-weight:700; font-size:0.95rem;
+    background:linear-gradient(0deg, rgba(15,38,32,0.85), transparent);
+  }
+  .center-cta{ text-align:center; margin-top:34px; }
+
+  /* Verse / closing CTA band */
+  .cta-band{
+    background:
+      radial-gradient(ellipse at 15% 0%, rgba(201,153,67,0.2), transparent 55%),
+      linear-gradient(160deg, var(--teal-900), var(--teal-950));
+    color:var(--paper);
+    padding:84px 0;
+    text-align:center;
+  }
+  .cta-band blockquote{
+    margin:0 auto;
+    max-width:760px;
+    font-family:'Fraunces', serif;
+    font-size:clamp(1.4rem, 2.8vw, 2rem);
+    line-height:1.35;
+    font-weight:500;
+    color:var(--paper);
+  }
+  .cta-band cite{
+    display:block;
+    margin-top:16px;
+    font-family:'Karla', sans-serif;
+    font-style:normal;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    font-size:0.85rem;
+    color:var(--gold-400);
+  }
+  .cta-band .hero-actions{ justify-content:center; margin-top:30px; }
+
+  /* Location */
+  .location-grid{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:40px;
+    align-items:stretch;
+  }
+  .info-card{
+    background:var(--teal-900);
+    color:var(--paper);
+    border-radius:var(--radius-lg);
+    padding:34px 32px;
+    box-shadow:var(--shadow-lg);
+  }
+  .info-card h3{ color:var(--paper); font-size:1.35rem; margin-bottom:22px; }
+  .info-line{
+    display:flex;
+    gap:14px;
+    margin-bottom:22px;
+    align-items:flex-start;
+  }
+  .info-line svg{ flex-shrink:0; margin-top:3px; color:var(--gold-400); }
+  .info-line strong{ display:block; color:var(--paper); margin-bottom:2px; }
+  .info-line span, .info-line a{ color:rgba(251,250,246,0.82); font-size:0.97rem; overflow-wrap:anywhere; }
+  .info-line a{ text-decoration:none; border-bottom:1px solid rgba(220,176,102,0.5); transition:color .2s ease, border-color .2s ease; }
+  .info-line a:hover{ color:var(--gold-400); border-color:var(--gold-400); }
+  .info-card .btn{ margin-top:6px; }
+  .map-embed{
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    min-height:380px;
+    background:var(--paper-dim);
+  }
+  .map-embed iframe{ width:100%; height:100%; min-height:380px; border:0; display:block; }
+
+  /* Giving */
+  .giving-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:22px;
+  }
+  .giving-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-lg);
+    padding:30px 26px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), border-color .3s ease;
+  }
+  .giving-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow); border-color:var(--gold-400); }
+  .giving-card .glyph{ width:42px; height:42px; }
+  .giving-card h3{ font-size:1.18rem; margin-bottom:0; }
+  .giving-card p{ color:var(--ink-soft); font-size:0.96rem; margin:0; }
+  .giving-detail{
+    margin-top:auto;
+    background:var(--paper-dim);
+    border-radius:var(--radius-sm);
+    padding:14px 16px;
+    font-size:0.92rem;
+    color:var(--ink);
+  }
+  .giving-detail .row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:4px 10px;
+  }
+  .giving-detail .row + .row{ margin-top:10px; padding-top:10px; border-top:1px dashed var(--line); }
+  .giving-detail b{ color:var(--teal-900); }
+  .giving-detail .val{ font-weight:700; letter-spacing:0.02em; word-break:break-all; }
+  .copy-btn{
+    border:1px solid var(--gold-500);
+    background:transparent;
+    color:var(--teal-900);
+    border-radius:100px;
+    padding:3px 12px;
+    font-size:0.78rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:background .2s ease, color .2s ease;
+  }
+  .copy-btn:hover{ background:var(--gold-500); }
+  .copy-btn.done{ background:var(--teal-900); border-color:var(--teal-900); color:var(--gold-400); }
+
+  /* Contact */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:44px;
+    align-items:start;
+  }
+  form.contact-form{ display:flex; flex-direction:column; gap:16px; }
+  .field{ display:flex; flex-direction:column; gap:6px; }
+  .field label{ font-size:0.88rem; font-weight:700; color:var(--teal-900); }
+  .field input, .field textarea{
+    border:1px solid var(--line);
+    border-radius:var(--radius-sm);
+    padding:13px 15px;
+    font-family:'Karla', sans-serif;
+    font-size:1rem;
+    background:#fff;
+    color:var(--ink);
+    resize:vertical;
+    width:100%;
+    transition:border-color .2s ease, box-shadow .2s ease;
+  }
+  .field input:focus, .field textarea:focus{
+    border-color:var(--gold-500);
+    box-shadow:0 0 0 4px rgba(201,153,67,0.18);
+    outline:none;
+  }
+  .form-note{ font-size:0.86rem; color:var(--ink-soft); }
+
+  /* Gallery */
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:18px;
+  }
+  .gallery-tile{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border:0; padding:0;
+    border-radius:var(--radius-sm);
+    cursor:zoom-in;
+    background:var(--teal-800);
+    aspect-ratio:4/5;
+    box-shadow:var(--shadow);
+    width:100%;
+  }
+  .gallery-tile.wide{ grid-column:1 / -1; aspect-ratio:21/9; }
+  .gallery-tile.wide.tall{ aspect-ratio:16/9; }
+  .gallery-tile img{
+    width:100%; height:100%;
+    object-fit:cover;
+    transition:transform .8s var(--ease);
+  }
+  .gallery-tile:hover img{ transform:scale(1.05); }
+  .gallery-tile .cap{
+    position:absolute; left:0; right:0; bottom:0;
+    padding:44px 20px 16px;
+    color:#fff;
+    font-weight:700;
+    font-size:1rem;
+    text-align:left;
+    background:linear-gradient(0deg, rgba(15,38,32,0.88), transparent);
+  }
+  .gallery-tile .zoom{
+    position:absolute; top:14px; right:14px;
+    width:38px; height:38px;
+    border-radius:50%;
+    background:rgba(15,38,32,0.65);
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; transform:scale(.85);
+    transition:opacity .25s ease, transform .25s var(--ease);
+  }
+  .gallery-tile:hover .zoom, .gallery-tile:focus-visible .zoom{ opacity:1; transform:none; }
+
+  /* Lightbox */
+  .lightbox{
+    position:fixed; inset:0; z-index:500;
+    background:rgba(8,20,16,0.94);
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    padding:24px 12px;
+    opacity:0; visibility:hidden;
+    transition:opacity .3s ease, visibility 0s linear .3s;
+  }
+  .lightbox.open{ opacity:1; visibility:visible; transition-delay:0s; }
+  .lightbox img{
+    max-width:min(94vw, 1100px);
+    max-height:78vh;
+    object-fit:contain;
+    border-radius:8px;
+    box-shadow:0 30px 80px rgba(0,0,0,0.6);
+    transition:opacity .2s ease;
+  }
+  .lightbox .lb-cap{ color:#fff; margin-top:16px; font-weight:600; text-align:center; }
+  .lightbox .lb-count{ color:rgba(255,255,255,0.6); font-size:0.85rem; margin-top:2px; }
+  .lb-btn{
+    position:absolute;
+    width:48px; height:48px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.08);
+    color:#fff; font-size:1.5rem; line-height:1;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background .2s ease;
+  }
+  .lb-btn:hover{ background:rgba(255,255,255,0.2); }
+  .lb-close{ top:16px; right:16px; }
+  .lb-prev{ left:16px; top:50%; transform:translateY(-50%); }
+  .lb-next{ right:16px; top:50%; transform:translateY(-50%); }
+
+  /* Connect / Social */
+  .social-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:22px;
+    max-width:780px;
+  }
+  .social-card{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    align-items:flex-start;
+    text-decoration:none;
+    color:var(--ink);
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-lg);
+    padding:30px 28px;
+    transition:transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s ease;
+  }
+  .social-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+    border-color:var(--gold-500);
+  }
+  .social-icon{
+    width:52px; height:52px;
+    border-radius:15px;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--paper);
+  }
+  .social-card h3{ font-size:1.2rem; margin-bottom:2px; }
+  .social-card p{ color:var(--ink-soft); font-size:0.95rem; margin:0; }
+  .social-card .go{
+    margin-top:auto;
+    font-weight:700;
+    font-size:0.9rem;
+    color:var(--clay-600);
+    transition:letter-spacing .25s ease;
+  }
+  .social-card:hover .go{ letter-spacing:0.02em; }
+  .icon-youtube{ background:#c4302b; }
+  .icon-facebook{ background:#1f487a; }
+
+  /* Footer */
+  footer{
+    background:var(--teal-950);
+    color:rgba(251,250,246,0.72);
+    padding:52px 0 30px;
+  }
+  .footer-row{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    gap:34px;
+    padding-bottom:32px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+  .footer-brand{
+    display:flex; align-items:center; gap:12px;
+    color:var(--paper); font-family:'Fraunces', serif; font-size:1.15rem; font-weight:600;
+    margin-bottom:12px;
+  }
+  .footer-brand img{ height:46px; width:auto; background:#fff; border-radius:8px; padding:3px; }
+  .footer-about{ font-size:0.94rem; max-width:34ch; margin:0; }
+  footer h4{
+    font-family:'Karla', sans-serif;
+    font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--gold-400); margin-bottom:14px;
+  }
+  .footer-links{ display:flex; flex-direction:column; gap:8px; }
+  .footer-links a, .footer-contact a{ color:rgba(251,250,246,0.75); text-decoration:none; font-size:0.94rem; transition:color .2s ease; }
+  .footer-links a:hover, .footer-contact a:hover{ color:var(--gold-400); }
+  .footer-contact{ display:flex; flex-direction:column; gap:8px; font-size:0.94rem; }
+  .footer-social{ display:flex; gap:10px; margin-top:6px; }
+  .footer-social a{
+    width:40px; height:40px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    border:1px solid rgba(255,255,255,0.22);
+    transition:background .2s ease, border-color .2s ease, transform .2s var(--ease);
+  }
+  .footer-social a:hover{ background:var(--gold-500); border-color:var(--gold-500); transform:translateY(-3px); }
+  .footer-social svg{ width:18px; height:18px; }
+  .footer-bottom{
+    padding-top:22px;
+    font-size:0.86rem;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1000px){
+    .hero .wrap{ gap:36px; }
+    .schedule-time{ width:170px; }
+  }
+
+  @media (max-width:900px){
+    :root{ --header-h:70px; }
+    .brand-mark{ height:50px; }
+    .menu-toggle{ display:flex; }
+    nav.main-nav{
+      position:absolute;
+      top:var(--header-h); left:0; right:0;
+      background:var(--teal-900);
+      flex-direction:column;
+      align-items:stretch;
+      padding:6px 24px 20px;
+      gap:0;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+      box-shadow:0 22px 30px -18px rgba(0,0,0,0.5);
+      transform-origin:top;
+      transform:scaleY(0.96) translateY(-8px);
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+      transition:transform 0.25s var(--ease), opacity 0.2s ease, visibility 0s linear 0.25s;
+    }
+    nav.main-nav.open{
+      transform:none;
+      opacity:1;
+      visibility:visible;
+      pointer-events:auto;
+      transition-delay:0s;
+    }
+    nav.main-nav a{ padding:16px 4px; font-size:1.05rem; border-bottom:1px solid rgba(255,255,255,0.07); opacity:1; }
+    nav.main-nav a:last-child{ border-bottom:0; }
+    nav.main-nav a::after{ display:none; }
+    nav.main-nav a.active{ color:var(--gold-400); }
+
+    .hero{ padding:56px 0 64px; text-align:center; }
+    .hero .wrap{ grid-template-columns:1fr; }
+    .hero-logo-frame{ order:-1; }
+    .hero-logo-frame img{ max-width:230px; padding:12px; }
+    .hero h1, .hero p.lede{ margin-left:auto; margin-right:auto; }
+    .hero-actions{ justify-content:center; }
+
+    section.block{ padding:62px 0; }
+    .cta-band{ padding:62px 0; }
+    .mvv-grid{ grid-template-columns:1fr; }
+    .faith-list{ grid-template-columns:1fr; }
+    .values-row{ grid-template-columns:repeat(2, 1fr); }
+    .giving-grid{ grid-template-columns:1fr 1fr; }
+    .location-grid, .contact-grid{ grid-template-columns:1fr; }
+    .map-embed, .map-embed iframe{ min-height:320px; }
+    .moments-grid{ grid-template-columns:1fr 1fr; }
+    .moments-grid .moment:nth-child(3){ grid-column:1 / -1; aspect-ratio:16/9; }
+    .footer-row{ grid-template-columns:1fr 1fr; }
+    .footer-row > div:first-child{ grid-column:1 / -1; }
+  }
+
+  @media (max-width:640px){
+    .wrap{ padding:0 20px; }
+    .brand-text{ font-size:0.98rem; }
+    .giving-grid{ grid-template-columns:1fr; }
+    .social-grid{ grid-template-columns:1fr; }
+    .gallery-grid{ grid-template-columns:1fr; gap:14px; }
+    .gallery-tile{ aspect-ratio:4/5; }
+    .gallery-tile.wide{ aspect-ratio:16/10; }
+    .gallery-tile.wide.tall{ aspect-ratio:4/3; }
+    .gallery-tile .zoom{ opacity:1; transform:none; width:34px; height:34px; }
+    .schedule-row{ flex-direction:column; gap:4px; padding:18px 10px; margin:0 -10px; }
+    .schedule-time{ width:auto; }
+    .service-strip .wrap{ flex-direction:column; align-items:flex-start; gap:6px; padding:16px 20px; }
+    .mvv-card{ padding:26px 22px; }
+    .lb-prev{ left:6px; } .lb-next{ right:6px; }
+    .lb-btn{ width:42px; height:42px; }
+    .lightbox img{ max-height:70vh; }
+  }
+
+  @media (max-width:480px){
+    .values-row{ grid-template-columns:1fr; }
+    .moments-grid{ grid-template-columns:1fr; }
+    .moments-grid .moment:nth-child(3){ grid-column:auto; aspect-ratio:4/3; }
+    .hero-actions .btn{ flex:1 1 100%; }
+    .footer-row{ grid-template-columns:1fr; }
+    .footer-bottom{ flex-direction:column; }
+    .faith-list li{ padding:18px 18px 18px 62px; }
+    .faith-list li::before{ left:16px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *, *::before, *::after{ animation:none !important; transition-duration:0.01ms !important; }
+    html.js .reveal{ opacity:1; transform:none; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header id="siteHeader">
+  <div class="wrap nav-row">
+    <a href="#home" class="brand" data-link data-page="home" aria-label="Hope Provision Centre Church — home">
+      <img class="brand-mark" src="images/logo.jpg" alt="Hope Provision Centre Church logo" width="50" height="55">
+      <span class="brand-text">Hope Provision Centre Church<span>HPCC</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <a href="#home" data-link data-page="home" class="active">Home</a>
+      <a href="#location" data-link data-page="location">Location</a>
+      <a href="#giving" data-link data-page="giving">Giving</a>
+      <a href="#gallery" data-link data-page="gallery">Gallery</a>
+      <a href="#connect" data-link data-page="connect">Connect</a>
+      <a href="#contact" data-link data-page="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HOME ===================== -->
+  <section class="page active" id="home" data-title="Hope Provision Centre Church — Giving a Living Hope">
+
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <div class="eyebrow-gold">Welcome home</div>
+          <h1>A place to belong, believe, and <em>grow in hope.</em></h1>
+          <p class="lede">Hope Provision Centre Church is a family of believers gathered around one purpose: to know God, grow in faith, and carry His provision to the people around us.</p>
+          <div class="hero-actions">
+            <a href="#location" data-link data-page="location" class="btn btn-gold">Plan a visit</a>
+            <a href="#giving" data-link data-page="giving" class="btn btn-outline">Ways to give</a>
+          </div>
+        </div>
+        <div class="hero-logo-frame">
+          <img src="images/logo.jpg" alt="Hope Provision Centre Church — Giving a Living Hope, Mark 16:15" width="340" height="374">
+        </div>
+      </div>
+    </div>
+
+    <div class="service-strip">
+      <div class="wrap">
+        <span><span class="dot">&#9679;</span>Sunday Worship — 9:00 AM - 1:00 PM</span>
+        <span><span class="dot">&#9679;</span>Sunday School — 8:00 AM</span>
+        <span><span class="dot">&#9679;</span>Thursday Fellowship — 2:00 PM</span>
+      </div>
+    </div>
+
+    <!-- Vision / Mission / Aim -->
+    <section class="block">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">What we stand on</div>
+          <h2>Vision, mission &amp; aim</h2>
+          <p>The convictions that shape everything we do, from a Sunday gathering to a Tuesday phone call.</p>
+        </div>
+
+        <div class="mvv-grid">
+          <div class="mvv-card reveal">
+            <svg class="glyph" viewBox="0 0 44 44" fill="none"><path d="M4 22c4-9 12-14 18-14s14 5 18 14c-4 9-12 14-18 14S8 31 4 22Z" stroke="#16332C" stroke-width="2"/><circle cx="22" cy="22" r="5" fill="#C99943"/></svg>
+            <h3>Our vision</h3>
+            <p>Transforming our community with the gospel of peace as we rise up committed disciples of Jesus Christ.</p>
+          </div>
+          <div class="mvv-card reveal" style="--d:.1s">
+            <svg class="glyph" viewBox="0 0 44 44" fill="none"><path d="M22 4v36M6 22h32" stroke="#C99943" stroke-width="2.4" stroke-linecap="round"/><circle cx="22" cy="22" r="17" stroke="#16332C" stroke-width="2"/></svg>
+            <h3>Our mission</h3>
+            <p>To create a Christian community that effectively reaches out to unchurched people in love, acceptance, and forgiveness as they experience the joy of salvation and a purposeful life of discipleship.</p>
+          </div>
+          <div class="mvv-card wide reveal">
+            <svg class="glyph" viewBox="0 0 44 44" fill="none"><path d="M22 6 27 18 40 19 30 27 33 40 22 33 11 40 14 27 4 19 17 18Z" stroke="#C99943" stroke-width="2" stroke-linejoin="round"/></svg>
+            <h3>Our aim</h3>
+            <p>To prepare God's people for works of service, so that the body of Christ may be built up until we all reach unity in the faith and in the knowledge of the Son of God and become mature, attaining to the whole measure of the fullness of Christ, then we'll no longer be infants tossed back and forth by the waves, and blown here and there by every wind of teaching and by the cunning and craftiness of men in their deceitful scheming. <strong>(Eph 4:12-14)</strong></p>
+          </div>
+        </div>
+
+        <div class="values-row">
+          <div class="value-chip reveal"><h4>Faith</h4><p>Rooted in Scripture, not circumstance.</p></div>
+          <div class="value-chip reveal" style="--d:.08s"><h4>Family</h4><p>No one worships alone here.</p></div>
+          <div class="value-chip reveal" style="--d:.16s"><h4>Service</h4><p>Provision flows outward, not inward.</p></div>
+          <div class="value-chip reveal" style="--d:.24s"><h4>Integrity</h4><p>What we preach is what we practice.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statement of Faith -->
+    <section class="block alt-bg" id="faith">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">What we believe</div>
+          <h2>Statement of faith</h2>
+        </div>
+
+        <ol class="faith-list">
+          <li class="reveal">We believe that God exists eternally in three Persons: the Father, the Son, and the Holy Spirit.</li>
+          <li class="reveal" style="--d:.06s">We believe the Bible to be the inspired Word of God.</li>
+          <li class="reveal">We believe in the deity of the Lord Jesus Christ, that He was born into the world through the Virgin Mary, was crucified on the cross for our redemption from sins, resurrected from the dead, ascended into heaven, and will return for judgment.</li>
+          <li class="reveal" style="--d:.06s">We believe humanity to be fallen and depraved, needing the regenerating work of God's Spirit for salvation.</li>
+          <li class="reveal">We believe every Christian to be empowered to live a Christ-honoring life by the indwelling of the Holy Spirit.</li>
+          <li class="reveal" style="--d:.06s">We believe in the resurrection of both the saved and the unsaved. Those who are saved will be resurrected into eternal life, and those who are unsaved will be resurrected into eternal damnation.</li>
+          <li class="reveal">We believe in the spiritual unity of all members of the Body of Christ.</li>
+          <li class="reveal" style="--d:.06s">We believe that God is the Creator of all things.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="block">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">Join us this week</div>
+          <h2>Sunday programs</h2>
+          <p>Every gathering is built around the same rhythm: welcome, worship, the Word, and one another.</p>
+        </div>
+
+        <div class="schedule-list">
+          <div class="schedule-row reveal">
+            <div class="schedule-time">8:00 – 8:45 AM</div>
+            <div>
+              <div class="schedule-name">Sunday School</div>
+              <div class="schedule-desc">Age-grouped classes for children and teens, running alongside the early prayer hour.</div>
+            </div>
+          </div>
+          <div class="schedule-row reveal">
+            <div class="schedule-time">9:00 – 10:15 AM</div>
+            <div>
+              <div class="schedule-name">Bible Study</div>
+              <div class="schedule-desc">Worship, communion on the first Sunday of the month, and the weekly message.</div>
+            </div>
+          </div>
+          <div class="schedule-row reveal">
+            <div class="schedule-time">11:00 AM – 1:00 PM</div>
+            <div>
+              <div class="schedule-name">Main Service</div>
+              <div class="schedule-desc">Morning message with a full praise team and children's ministry.</div>
+            </div>
+          </div>
+          <div class="schedule-row reveal">
+            <div class="schedule-time">Thurs, 2:00 – 4:00 PM</div>
+            <div>
+              <div class="schedule-name">Midweek Fellowship</div>
+              <div class="schedule-desc">A slower, discussion-based look at Scripture, open to newcomers and members alike.</div>
+            </div>
+          </div>
+          <div class="schedule-row reveal">
+            <div class="schedule-time">Fri, 6:30 – 8:00 PM</div>
+            <div>
+              <div class="schedule-name">Prayer &amp; Fasting Night</div>
+              <div class="schedule-desc">A dedicated evening of corporate prayer, held on the last Friday of each month.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moments preview -->
+    <section class="block alt-bg">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">Life together</div>
+          <h2>Moments from our church family</h2>
+        </div>
+
+        <div class="moments-grid">
+          <a class="moment reveal" href="#gallery" data-link data-page="gallery">
+            <img src="images/worship-team.jpg" alt="Praise and worship team singing during the service" loading="lazy" width="1400" height="630">
+            <span>Praise &amp; worship</span>
+          </a>
+          <a class="moment reveal" style="--d:.1s" href="#gallery" data-link data-page="gallery">
+            <img src="images/congregation.jpg" alt="Congregation seated and listening during the service" loading="lazy" width="1400" height="630">
+            <span>Our church family</span>
+          </a>
+          <a class="moment reveal" style="--d:.2s" href="#gallery" data-link data-page="gallery">
+            <img src="images/celebration.jpg" alt="Church members gathered outdoors for a celebration" loading="lazy" width="1050" height="1400" style="object-position:50% 38%">
+            <span>Celebration &amp; fellowship</span>
+          </a>
+        </div>
+        <div class="center-cta reveal">
+          <a href="#gallery" data-link data-page="gallery" class="btn btn-teal">See all photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verse + CTA -->
+    <section class="cta-band">
+      <div class="wrap reveal">
+        <blockquote>
+          “Go ye into all the world, and preach the gospel to every creature.”
+          <cite>Mark 16:15</cite>
+        </blockquote>
+        <div class="hero-actions">
+          <a href="#location" data-link data-page="location" class="btn btn-gold">Plan a visit</a>
+          <a href="#contact" data-link data-page="contact" class="btn btn-outline">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== LOCATION ===================== -->
+  <section class="page" id="location" data-title="Location — Hope Provision Centre Church">
+    <section class="block">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">Find us</div>
+          <h2>Church location</h2>
+          <p>We'd love to have you join us in person. Here's everything you need to plan your first visit.</p>
+        </div>
+
+        <div class="location-grid">
+          <div class="info-card reveal">
+            <h3>Hope Provision Centre Church</h3>
+
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+              <div>
+                <strong>Address</strong>
+                <span>Past Kayole Junction near Maana Area, Spring Valley</span>
+              </div>
+            </div>
+
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+              <div>
+                <strong>Service times</strong>
+                <span>Sundays, 9:00 AM - 1:00 PM &middot; Thursdays, 2:00 PM</span>
+              </div>
+            </div>
+
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2"/><path d="M9.5 17V7h3.2a3 3 0 0 1 0 6H9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Parking &amp; access</strong>
+                <span>On-site parking available</span>
+              </div>
+            </div>
+
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4c0 1.1-.9 2-2 2C10.4 21 3 13.6 3 5c0-1.1.9-2 2-1Z" stroke="currentColor" stroke-width="2"/></svg>
+              <div>
+                <strong>Directions help</strong>
+                <span>Call the church office on <a href="tel:0722642466">0722642466</a> and someone will happily talk you in.</span>
+              </div>
+            </div>
+
+            <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=Hope+Provision+Centre+Church+Kayole+Junction+Spring+Valley+Nairobi" target="_blank" rel="noopener noreferrer">Get directions</a>
+          </div>
+
+          <div class="map-embed reveal" style="--d:.1s">
+            <iframe
+              src="https://www.google.com/maps?q=Hope+Provision+Centre+Church+Kayole+Junction+Spring+Valley+Nairobi&amp;output=embed"
+              title="Map showing Hope Provision Centre Church"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== GIVING ===================== -->
+  <section class="page" id="giving" data-title="Giving — Hope Provision Centre Church">
+    <section class="block">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">Sow into the work</div>
+          <h2>Ways to give</h2>
+          <p>Giving at Hope Provision Centre Church is an act of worship. Choose whichever way is easiest for you.</p>
+        </div>
+
+        <div class="giving-grid">
+          <div class="giving-card reveal">
+            <svg class="glyph" viewBox="0 0 40 40" fill="none"><rect x="4" y="10" width="32" height="22" rx="3" stroke="#C99943" stroke-width="2"/><path d="M4 16h32" stroke="#C99943" stroke-width="2"/><circle cx="12" cy="24" r="2" fill="#16332C"/></svg>
+            <h3>In-person offering</h3>
+            <p>Give during any Sunday service or midweek gathering — offering baskets are passed during worship.</p>
+          </div>
+
+          <div class="giving-card reveal" style="--d:.1s">
+            <svg class="glyph" viewBox="0 0 40 40" fill="none"><rect x="5" y="8" width="30" height="24" rx="3" stroke="#C99943" stroke-width="2"/><path d="M5 15h30" stroke="#C99943" stroke-width="2"/><path d="M10 24h8" stroke="#16332C" stroke-width="2" stroke-linecap="round"/></svg>
+            <h3>Bank transfer</h3>
+            <p>Direct deposits and transfers are welcome for tithes, offerings, and special projects.</p>
+            <div class="giving-detail">
+              <div class="row"><span><b>Account name:</b> Hope Provision Centre Church</span></div>
+              <div class="row"><span><b>Bank:</b> Equity Bank</span></div>
+              <div class="row"><span><b>Account number:</b> <span class="val">0650285891792</span></span><button type="button" class="copy-btn" data-copy="0650285891792">Copy</button></div>
+            </div>
+          </div>
+
+          <div class="giving-card reveal" style="--d:.2s">
+            <svg class="glyph" viewBox="0 0 40 40" fill="none"><rect x="10" y="4" width="20" height="32" rx="3" stroke="#C99943" stroke-width="2"/><circle cx="20" cy="30" r="1.6" fill="#16332C"/></svg>
+            <h3>Mobile money</h3>
+            <p>Send your giving directly from your phone — fast, simple, and available every day of the week.</p>
+            <div class="giving-detail">
+              <div class="row"><span><b>Paybill / Till:</b> <span class="val">247247</span></span><button type="button" class="copy-btn" data-copy="247247">Copy</button></div>
+              <div class="row"><span><b>Account NO:</b> <span class="val">466422</span></span><button type="button" class="copy-btn" data-copy="466422">Copy</button></div>
+              <div class="row"><span><b>Account name:</b> Hope Provision Centre Church</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="page" id="gallery" data-title="Gallery — Hope Provision Centre Church">
+    <section class="block">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">Moments together</div>
+          <h2>Gallery</h2>
+          <p>A look at life at Hope Provision Centre Church — worship, fellowship, and community. Tap a photo to view it larger.</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <button type="button" class="gallery-tile wide reveal" data-caption="Praise &amp; worship" aria-label="View photo: Praise and worship">
+            <img src="images/worship-team.jpg" alt="Praise and worship team singing beside the pulpit" width="1400" height="630" loading="lazy">
+            <span class="zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+            <span class="cap">Praise &amp; worship</span>
+          </button>
+          <button type="button" class="gallery-tile reveal" data-caption="Sunday service" aria-label="View photo: Sunday service">
+            <img src="images/sunday-service.jpg" alt="Worship team at the pulpit during Sunday service" width="1400" height="1400" loading="lazy">
+            <span class="zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+            <span class="cap">Sunday service</span>
+          </button>
+          <button type="button" class="gallery-tile reveal" style="--d:.1s" data-caption="Celebration &amp; fellowship" aria-label="View photo: Celebration and fellowship">
+            <img src="images/celebration.jpg" alt="Church members gathered outdoors around a couple for a celebration" width="1050" height="1400" loading="lazy" style="object-position:50% 40%">
+            <span class="zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+            <span class="cap">Celebration &amp; fellowship</span>
+          </button>
+          <button type="button" class="gallery-tile wide tall reveal" data-caption="Worship in song" aria-label="View photo: Worship in song">
+            <img src="images/choir.jpg" alt="Choir and worship team singing together beside the pulpit" width="1400" height="1050" loading="lazy" style="object-position:50% 25%">
+            <span class="zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+            <span class="cap">Worship in song</span>
+          </button>
+          <button type="button" class="gallery-tile wide reveal" data-caption="At the pulpit" aria-label="View photo: At the pulpit">
+            <img src="images/pulpit-speakers.jpg" alt="Two ministers speaking with microphones beside the church pulpit and offering box" width="1400" height="630" loading="lazy">
+            <span class="zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+            <span class="cap">At the pulpit</span>
+          </button>
+          <button type="button" class="gallery-tile wide reveal" data-caption="Sharing during the service" aria-label="View photo: Sharing during the service">
+            <img src="images/sharing-service.jpg" alt="Church members and a minister speaking on the platform during the service" width="1400" height="630" loading="lazy">
+            <span class="zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+            <span class="cap">Sharing during the service</span>
+          </button>
+          <button type="button" class="gallery-tile wide reveal" data-caption="Our church family" aria-label="View photo: Our church family">
+            <img src="images/congregation.jpg" alt="Congregation seated and listening during the service" width="1400" height="630" loading="lazy">
+            <span class="zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+            <span class="cap">Our church family</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== CONNECT / SOCIAL ===================== -->
+  <section class="page" id="connect" data-title="Connect — Hope Provision Centre Church">
+    <section class="block">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">Stay in touch</div>
+          <h2>Connect with us online</h2>
+          <p>Catch our sermons, updates, and community moments wherever you follow us.</p>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card reveal" href="https://youtube.com/@hopeprovisioncentrechurch?si=OvCiVnldH1ma681D" target="_blank" rel="noopener noreferrer">
+            <div class="social-icon icon-youtube">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M22 12s0-3.2-.4-4.6a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.6a2.6 2.6 0 0 0-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.6a2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.6a2.6 2.6 0 0 0 1.8-1.8c.4-1.4.4-4.6.4-4.6Z" fill="#fff"/><path d="M10 9.5v5l4.5-2.5L10 9.5Z" fill="#c4302b"/></svg>
+            </div>
+            <h3>YouTube</h3>
+            <p>Watch full sermons, worship sessions, and highlight reels from every service.</p>
+            <span class="go">Watch on YouTube &rarr;</span>
+          </a>
+
+          <a class="social-card reveal" style="--d:.1s" href="https://www.facebook.com/share/1AFW6J6p4Q/" target="_blank" rel="noopener noreferrer">
+            <div class="social-icon icon-facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5.4c-.35-.05-1.5-.15-2.86-.15-2.83 0-4.77 1.73-4.77 4.9V13H6.5v3.5h2.87V23h3.6v-6.5H15.8L16.3 13h-3.33v-2.4c0-1 .28-1.1 1.03-1.1Z" fill="#fff"/></svg>
+            </div>
+            <h3>Facebook</h3>
+            <p>Follow our page for event announcements, photo albums, and community updates.</p>
+            <span class="go">Follow on Facebook &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="page" id="contact" data-title="Contact — Hope Provision Centre Church">
+    <section class="block">
+      <div class="wrap">
+        <div class="block-heading reveal">
+          <div class="kicker">We'd love to hear from you</div>
+          <h2>Contact info</h2>
+          <p>Questions, prayer requests, or just want to say hello — reach out any of these ways.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="info-card reveal">
+            <h3>Get in touch</h3>
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="2"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2"/></svg>
+              <div><strong>Email</strong><a href="mailto:hopeprovisioncentrechurch@gmail.com">hopeprovisioncentrechurch@gmail.com</a></div>
+            </div>
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4c0 1.1-.9 2-2 2C10.4 21 3 13.6 3 5c0-1.1.9-2 2-1Z" stroke="currentColor" stroke-width="2"/></svg>
+              <div><strong>Phone</strong><a href="tel:0722642466">0722642466</a></div>
+            </div>
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+              <div><strong>Office</strong><span>Past Kayole Junction near Maana Area, Spring Valley</span></div>
+            </div>
+            <div class="info-line">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+              <div><strong>Office hours</strong><span>Tuesday – Friday, 9:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" style="--d:.1s" id="contactForm">
+            <div class="field">
+              <label for="cf-name">Full name</label>
+              <input id="cf-name" type="text" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email address</label>
+              <input id="cf-email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" rows="5" placeholder="How can we pray for or help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="align-self:flex-start;">Send message</button>
+            <p class="form-note">This opens your email app addressed to the church, with your message pre-filled — no data is stored or sent anywhere else.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <div>
+        <div class="footer-brand"><img src="images/logo.jpg" alt="" width="42" height="46"> Hope Provision Centre Church</div>
+        <p class="footer-about">Giving a Living Hope. Join us as we know God, grow in faith, and carry His provision to the people around us.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#home" data-link data-page="home">Home</a>
+          <a href="#location" data-link data-page="location">Location</a>
+          <a href="#giving" data-link data-page="giving">Giving</a>
+          <a href="#gallery" data-link data-page="gallery">Gallery</a>
+          <a href="#connect" data-link data-page="connect">Connect</a>
+          <a href="#contact" data-link data-page="contact">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <div class="footer-contact">
+          <a href="tel:0722642466">0722642466</a>
+          <a href="mailto:hopeprovisioncentrechurch@gmail.com">hopeprovisioncentrechurch@gmail.com</a>
+          <span>Past Kayole Junction near Maana Area, Spring Valley</span>
+        </div>
+        <div class="footer-social">
+          <a href="https://youtube.com/@hopeprovisioncentrechurch?si=OvCiVnldH1ma681D" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12s0-3.2-.4-4.6a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.6a2.6 2.6 0 0 0-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.6a2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.6a2.6 2.6 0 0 0 1.8-1.8c.4-1.4.4-4.6.4-4.6Z" fill="#fff"/><path d="M10 9.5v5l4.5-2.5L10 9.5Z" fill="#16332c"/></svg></a>
+          <a href="https://www.facebook.com/share/1AFW6J6p4Q/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5.4c-.35-.05-1.5-.15-2.86-.15-2.83 0-4.77 1.73-4.77 4.9V13H6.5v3.5h2.87V23h3.6v-6.5H15.8L16.3 13h-3.33v-2.4c0-1 .28-1.1 1.03-1.1Z" fill="#fff"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Hope Provision Centre Church. All rights reserved.</span>
+      <span>Built with hope, for the house of God.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Photo viewer -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Close photo viewer">&times;</button>
+  <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <img id="lbImg" src="" alt="">
+  <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+  <div class="lb-cap" id="lbCap"></div>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<script>
+  // ---------- Navigation between "pages" ----------
+  const pages = document.querySelectorAll('.page');
+  const navLinks = document.querySelectorAll('[data-link]');
+  const mainNav = document.getElementById('mainNav');
+  const menuToggle = document.getElementById('menuToggle');
+  const siteHeader = document.getElementById('siteHeader');
+
+  function showPage(id){
+    let found = false;
+    pages.forEach(p => {
+      const match = p.id === id;
+      p.classList.toggle('active', match);
+      if (match) { found = true; document.title = p.dataset.title || document.title; }
+    });
+    if(!found){
+      const home = document.getElementById('home');
+      home.classList.add('active');
+      document.title = home.dataset.title;
+      id = 'home';
+    }
+    navLinks.forEach(a => a.classList.toggle('active', a.dataset.page === id));
+    window.scrollTo({ top: 0, behavior: 'auto' });
+    closeMobileMenu();
+    observeReveals();
+  }
+
+  function routeFromHash(){
+    const id = (location.hash || '#home').replace('#','');
+    showPage(id);
+  }
+
+  navLinks.forEach(a => {
+    a.addEventListener('click', () => {
+      // same-hash clicks don't fire hashchange, so route manually too
+      setTimeout(routeFromHash, 0);
+    });
+  });
+  window.addEventListener('hashchange', routeFromHash);
+
+  // ---------- Mobile menu ----------
+  function closeMobileMenu(){
+    mainNav.classList.remove('open');
+    menuToggle.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+  menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = mainNav.classList.toggle('open');
+    menuToggle.classList.toggle('open', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  document.addEventListener('click', (e) => {
+    if (!siteHeader.contains(e.target)) closeMobileMenu();
+  });
+  window.addEventListener('resize', () => { if (window.innerWidth > 900) closeMobileMenu(); });
+
+  // ---------- Header shadow on scroll ----------
+  function onScroll(){ siteHeader.classList.toggle('scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // ---------- Scroll reveal ----------
+  let revealObserver = null;
+  function observeReveals(){
+    const items = document.querySelectorAll('.reveal:not(.in)');
+    if (!('IntersectionObserver' in window)) { items.forEach(el => el.classList.add('in')); return; }
+    if (!revealObserver){
+      revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(en => {
+          if (en.isIntersecting){ en.target.classList.add('in'); revealObserver.unobserve(en.target); }
+        });
+      }, { threshold:0.12, rootMargin:'0px 0px -40px 0px' });
+    }
+    items.forEach(el => revealObserver.observe(el));
+  }
+
+  routeFromHash();
+
+  // ---------- Copy buttons (giving) ----------
+  document.querySelectorAll('[data-copy]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const text = btn.dataset.copy;
+      let ok = false;
+      try { await navigator.clipboard.writeText(text); ok = true; }
+      catch(err){
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { ok = document.execCommand('copy'); } catch(_){}
+        ta.remove();
+      }
+      const old = btn.textContent;
+      btn.textContent = ok ? 'Copied' : 'Copy failed';
+      btn.classList.toggle('done', ok);
+      setTimeout(() => { btn.textContent = old; btn.classList.remove('done'); }, 1700);
+    });
+  });
+
+  // ---------- Gallery photo viewer ----------
+  const tiles = Array.from(document.querySelectorAll('.gallery-tile'));
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCap = document.getElementById('lbCap');
+  const lbCount = document.getElementById('lbCount');
+  let lbIndex = 0, lastFocus = null;
+
+  function lbShow(i){
+    lbIndex = (i + tiles.length) % tiles.length;
+    const t = tiles[lbIndex];
+    const img = t.querySelector('img');
+    lbImg.src = img.getAttribute('src');
+    lbImg.alt = img.alt;
+    lbCap.textContent = t.dataset.caption || '';
+    lbCount.textContent = (lbIndex + 1) + ' / ' + tiles.length;
+  }
+  function lbOpen(i){
+    lastFocus = document.activeElement;
+    lbShow(i);
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lbClose').focus();
+  }
+  function lbClose(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  tiles.forEach((t, i) => t.addEventListener('click', () => lbOpen(i)));
+  document.getElementById('lbClose').addEventListener('click', lbClose);
+  document.getElementById('lbPrev').addEventListener('click', () => lbShow(lbIndex - 1));
+  document.getElementById('lbNext').addEventListener('click', () => lbShow(lbIndex + 1));
+  lb.addEventListener('click', (e) => { if (e.target === lb) lbClose(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { if (lb.classList.contains('open')) lbClose(); else closeMobileMenu(); }
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft') lbShow(lbIndex - 1);
+    if (e.key === 'ArrowRight') lbShow(lbIndex + 1);
+  });
+  let touchX = null;
+  lb.addEventListener('touchstart', (e) => { touchX = e.changedTouches[0].clientX; }, { passive:true });
+  lb.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) lbShow(lbIndex + (dx < 0 ? 1 : -1));
+    touchX = null;
+  }, { passive:true });
+
+  // ---------- Contact form: opens a pre-filled email ----------
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+    const subject = encodeURIComponent('Message from ' + name + ' via church website');
+    const body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
+    window.location.href = 'mailto:hopeprovisioncentrechurch@gmail.com?subject=' + subject + '&body=' + body;
+  });
+
+  // ---------- Footer year ----------
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
